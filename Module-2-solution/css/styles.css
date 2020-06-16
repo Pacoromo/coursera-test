@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;    
+  }
+body {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    background-color: lightgray;
+}
+
+/* heading 75% larger than the sections font */
+h1 {
+    text-align: center;
+    margin: 30px;
+    font-size: 1.75em;
+}
+
+/* section settings */
+.section {
+    position: relative;
+    border: solid 2px black;
+    background-color: cadetblue;
+    margin: 15px;
+}
+
+/* section Title position and font sizing */
+.sectionTitle {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    text-align: center;
+    font-size: 1.25em;
+    width: 120px;
+    padding: 5px;
+    border: solid 2px black;   
+    margin-top: 0px;
+}
+
+/* Section title colors */
+#id1 {
+    background-color: red;
+    color: white;
+}
+#id2 {
+    background-color: seagreen;
+}
+#id3 {
+    background-color: yellow;
+    color: red;
+}
+
+/* section content settings */
+.sectionContent {
+    width: 95%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* responsive framework  */
+.row {    
+    width: 100%;    
+}
+
+@media (min-width: 992px) {
+      .col-lg-4 {
+       float: left;
+       width: 33.33%;               
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+        .col-md-6 {
+        float: left;
+        width: 50%;
+    } 
+        .col-last-sm-12{
+        float: left;
+        width: 100%;
+    }
+
+}
+
+/* I had to do a media query for the smallest screen in order to float the sections otherwise the margins would collapse */
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+     float: left;
+     width: 100%;               
+  }
+}
